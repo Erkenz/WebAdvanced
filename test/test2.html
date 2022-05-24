@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+</head>
+<body>
+<script language="javascript">
+    function toggle(matchingAttribute) {
+        // optain all div elements in the page
+        var divArray = document.getElementsByTagName("div");
+        for(i=divArray.length-1; i>=0; i--) {  // for each div
+            if(divArray[i].id.match("_"+matchingAttribute+"_")) {
+                if(divArray[i].style.display != 'none') {
+                    divArray[i].style.display = 'none';
+                }
+                else {
+                    divArray[i].style.display = '';
+                }
+            }
+        }
+    }  // end function toggle()
+</script>
+<form>
+    <input type="checkbox" checked onClick="toggle('nj');"> NJ
+    <input type="checkbox" checked onClick="toggle('ny');"> NY
+    <input type="checkbox" checked onClick="toggle('ct');"> CT
+    <BR>
+    <input type="checkbox" checked onClick="toggle('cheap');"> Cheap
+    <input type="checkbox" checked onClick="toggle('moderate');"> Moderate
+    <input type="checkbox" checked onClick="toggle('expensive');"> Expensive
+    <BR>
+    <input type="checkbox" checked onClick="toggle('burgers');"> Burgers
+    <input type="checkbox" checked onClick="toggle('pizza');"> Pizza
+    <input type="checkbox" checked onClick="toggle('sandwiches');"> Sandwiches
+    <BR>
+</form>
+<div id="non-descript">Places to Eat:</div>
+<BR>
+<!-- using underscore '_' for ease of use -->
+<div id="_nj_cheap_burgers_">NJ Place [Cheap Burger]</div>
+<div id="_nj_moderate_burgers_">NJ Place [Moderate Burgers]</div>
+<div id="_nj_expensive_burgers_">NJ Place [Expensive Burgers]</div>
+<div id="_nj_cheap_pizza_">NJ Place [Cheap Pizza]</div>
+<div id="_nj_moderate_pizza_">NJ Place [Moderate Pizza]</div>
+<div id="_nj_expensive_pizza_">NJ Place [Expensive Pizza]</div>
+<div id="_nj_cheap_sandwiches_">NJ Place [Cheap Sandwitches]</div>
+<div id="_nj_moderate_sandwiches_">NJ Place [Moderate Sandwitches]</div>
+<div id="_nj_expensive_sandwiches_" >NJ Place [Expensive Sandwitches]</div>
+<div id="_ny_cheap_burgers_">NY Place [Cheap Burger]</div>
+<div id="_ny_moderate_burgers_">NY Place [Moderate Burgers]</div>
+<div id="_ny_expensive_burgers_">NY Place [Expensive Burgers]</div>
+<div id="_ny_cheap_pizza_">NY Place [Cheap Pizza]</div>
+<div id="_ny_moderate_pizza_">NY Place [Moderate Pizza]</div>
+<div id="_ny_expensive_pizza_">NY Place [Expensive Pizza]</div>
+<div id="_ny_cheap_sandwiches_">NY Place [Cheap Sandwitches]</div>
+<div id="_ny_moderate_sandwiches_">NY Place [Moderate Sandwitches]</div>
+<div id="_ny_expensive_sandwiches_">NY Place [Expensive Sandwitches]</div>
+<div id="_ct_cheap_burgers_">CT Place [Cheap Burger]</div>
+<div id="_ct_moderate_burgers_">CT Place [Moderate Burgers]</div>
+<div id="_ct_expensive_burgers_">CT Place [Expensive Burgers]</div>
+<div id="_ct_cheap_pizza_">CT Place [Cheap Pizza]</div>
+<div id="_ct_moderate_pizza_">CT Place [Moderate Pizza]</div>
+<div id="_ct_expensive_pizza_">CT Place [Expensive Pizza]</div>
+<div id="_ct_cheap_sandwiches_">CT Place [Cheap Sandwitches]</div>
+<div id="_ct_moderate_sandwiches_">CT Place [Moderate Sandwitches]</div>
+<div id="_ct_expensive_sandwiches_">CT Place [Expensive Sandwitches]</div>
+<BR>
+</body>
+</html>

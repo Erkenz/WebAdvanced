@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a1a1a;
+    font-family: 'Quicksand', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.label1 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 100px auto auto;
+}
+
+.label2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 300px auto auto;
+}
+
+
+#begindatum {
+    background: #0082e6 url("../assets/Calander Icon Juiste2.jpg");
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 450px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px auto auto;
+}
+
+#einddatum {
+    background: #0082e6 url("../assets/Calander Icon Juiste2.jpg");
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    font-family: 'Quicksand', sans-serif;
+    padding: 15px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 450px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px auto auto;
+}
+
+input[type="submit"] {
+    padding: 15px;
+    margin: 300px auto auto;
+    border-radius: 10px;
+    border: solid #0082e6;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: #0082e6;
+    color: white;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    border: solid white;
+    color: #0082e6;
+}
+
+input:focus {
+    border: 3px solid #000000;
+}
+
+
+#begindatum::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#einddatum::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 500px) {
+
+}

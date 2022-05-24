@@ -1,0 +1,12 @@
+.calendar__header{
+    background: #0082e6;
+}
+
+.calendar__day-event{
+    background: #0082e6;
+    border-radius: 0.5rem;
+    margin: 0 5px;
+}
+.calendar__day-bullet{
+    display: none;
+}
